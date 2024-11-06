@@ -1,0 +1,39 @@
+{
+  "name": "bedrock-accelerator",
+  "version": "1.0.0",
+  "description": "AWS CDK stack for accelerating Bedrock API calls using VPC endpoints and NLB",
+  "main": "index.js",
+  "bin": {
+    "bedrock-accelerator": "bin/bedrock-accelerator.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "cdk": "cdk",
+    "deploy": "cdk deploy",
+    "destroy": "cdk destroy",
+    "synth": "cdk synth",
+    "diff": "cdk diff"
+  },
+  "keywords": [
+    "aws",
+    "cdk",
+    "bedrock",
+    "vpc-endpoint",
+    "nlb"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-global-accelerator": "^3.682.0",
+    "aws-cdk-lib": "^2.164.1",
+    "constructs": "^10.4.2",
+    "source-map-support": "^0.5.21"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "aws-cdk": "^2.164.1",
+    "ts-node": "^10.9.1",
+    "typescript": "~5.0.0"
+  }
+}
